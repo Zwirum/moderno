@@ -49,6 +49,8 @@ $(function(){
         $('.header__box').toggleClass('active');
     });
 
+    $('input[type="file"], select').styler();
+
     
     var mixer = mixitup('.products__inner-box');
 });
