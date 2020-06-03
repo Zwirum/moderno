@@ -32,10 +32,10 @@ $(function(){
         $('.icon-th-list').removeClass('active');
     });
 
-    $('.product-one__tubs .tab').on('click', function(event) {
+    $('.product-one__tubs .tab, .setiings__tubs .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
-            $('.product-one__tubs').find('.tab-item').removeClass('active-tab').hide();
-            $('.product-one__tubs .tabs').find('.tab').removeClass('active');
+            $('.product-one__tubs, .setiings__tubs').find('.tab-item').removeClass('active-tab').hide();
+            $('.product-one__tubs .tabs, .setiings__tubs .tabs').find('.tab').removeClass('active');
             $(this).addClass('active');
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
